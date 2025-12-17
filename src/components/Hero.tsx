@@ -56,11 +56,11 @@ const Hero = () => {
                     </div>
 
                     <div className="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
-                        <Link href="#register" className="inline-flex justify-center items-center py-3 px-8 text-base font-medium text-center text-white rounded-full bg-gradient-to-r from-primary to-pink-600 hover:bg-gradient-to-br focus:ring-4 focus:ring-primary/30 transition-all shadow-lg shadow-primary/25 hover:shadow-primary/50 hover:scale-105">
+                        <Link href="/registration" className="inline-flex justify-center items-center py-3 px-8 text-base font-medium text-center text-white rounded-full bg-gradient-to-r from-primary to-pink-600 hover:bg-gradient-to-br focus:ring-4 focus:ring-primary/30 transition-all shadow-lg shadow-primary/25 hover:shadow-primary/50 hover:scale-105">
                             Register Now
                             <ArrowRight className="w-5 h-5 ms-2" />
                         </Link>
-                        <Link href="#schedule" className="inline-flex justify-center items-center py-3 px-8 text-base font-medium text-center text-white rounded-full border border-white/20 hover:bg-white/10 focus:ring-4 focus:ring-gray-700 transition-all hover:scale-105 backdrop-blur-sm">
+                        <Link href="/important-dates" className="inline-flex justify-center items-center py-3 px-8 text-base font-medium text-center text-white rounded-full border border-white/20 hover:bg-white/10 focus:ring-4 focus:ring-gray-700 transition-all hover:scale-105 backdrop-blur-sm">
                             View Schedule
                         </Link>
                     </div>

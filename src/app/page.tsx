@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Timeline from "@/components/Timeline";
@@ -17,17 +18,17 @@ export default function Home() {
           <div className="p-6 rounded-2xl bg-secondary/20 border border-white/5 backdrop-blur-sm hover:bg-secondary/30 transition-colors">
             <h3 className="text-xl font-bold mb-3 text-white">Call for Papers</h3>
             <p className="text-gray-400 mb-4">Submit your research papers for review by our expert committee.</p>
-            <a href="#" className="text-accent hover:underline">Learn more &rarr;</a>
+            <Link href="/tracks" className="text-accent hover:underline">Learn more &rarr;</Link>
           </div>
           <div className="p-6 rounded-2xl bg-secondary/20 border border-white/5 backdrop-blur-sm hover:bg-secondary/30 transition-colors">
             <h3 className="text-xl font-bold mb-3 text-white">Keynote Speakers</h3>
             <p className="text-gray-400 mb-4">Meet the visionaries shaping the future of industrial systems.</p>
-            <a href="#" className="text-accent hover:underline">View speakers &rarr;</a>
+            <Link href="/speakers" className="text-accent hover:underline">View speakers &rarr;</Link>
           </div>
           <div className="p-6 rounded-2xl bg-secondary/20 border border-white/5 backdrop-blur-sm hover:bg-secondary/30 transition-colors">
             <h3 className="text-xl font-bold mb-3 text-white">Registration</h3>
             <p className="text-gray-400 mb-4">Early bird registration is now open. Secure your spot today.</p>
-            <a href="#" className="text-accent hover:underline">Register now &rarr;</a>
+            <Link href="/registration" className="text-accent hover:underline">Register now &rarr;</Link>
           </div>
         </div>
       </section>
