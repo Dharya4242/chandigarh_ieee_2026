@@ -1,13 +1,14 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Timeline from "@/components/Timeline";
+import ConferenceDescription from "@/components/ConferenceDescription";
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-background flex flex-col">
       <Navbar />
       <Hero />
-
+      <ConferenceDescription />
       <Timeline />
 
       {/* Placeholder for future sections */}
