@@ -8,8 +8,23 @@ import { ExternalLink, Linkedin, User } from "lucide-react";
 // For now, we assume paths in data are correct relative to public/
 // We might need to prepend generic path if not present, but data seems to have /assets/committee/...
 
+// Define simple types for the data structures
+type CommitteeMember = {
+    name: string;
+    designation: string;
+    image_url: string;
+    link?: string;
+    track?: string;
+};
+
+type CommitteeData = {
+    [key: string]: CommitteeMember[];
+};
+
 const CommitteePage = () => {
-    const committeeKeys = Object.keys(COMMITTEE);
+    // Cast the imported data to the defined type
+    const committeeData = COMMITTEE as unknown as CommitteeData;
+    const committeeKeys = Object.keys(committeeData);
 
     return (
         <main className="min-h-screen bg-background flex flex-col">
@@ -34,7 +49,7 @@ const CommitteePage = () => {
             {/* Committee Sections */}
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20 space-y-24">
                 {committeeKeys.map((sectionTitle, index) => {
-                    const members = COMMITTEE[sectionTitle];
+                    const members = committeeData[sectionTitle];
 
                     // Skip empty sections
                     if (!members || members.length === 0) return null;
@@ -50,7 +65,7 @@ const CommitteePage = () => {
                             </div>
 
                             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-                                {members.map((member, mIndex) => {
+                                {members.map((member: CommitteeMember, mIndex: number) => {
                                     // Handle image loading or fallbacks ideally, but for now direct img src
                                     // Some images in data might be empty string
                                     const hasImage = member.image_url && member.image_url.length > 0;
