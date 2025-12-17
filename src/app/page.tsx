@@ -1,11 +1,14 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
+import Timeline from "@/components/Timeline";
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-background flex flex-col">
       <Navbar />
       <Hero />
+
+      <Timeline />
 
       {/* Placeholder for future sections */}
       <section className="py-20 px-4 md:px-8 max-w-7xl mx-auto w-full">
