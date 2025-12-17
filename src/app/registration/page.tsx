@@ -67,7 +67,32 @@ const RegistrationPage = () => {
                             </span>
                         </div>
 
-                        <div className="overflow-x-auto">
+                        {/* Mobile Card View */}
+                        <div className="md:hidden space-y-4">
+                            {detailedFees.map((fee, index) => (
+                                <div key={index} className="bg-white/5 p-5 rounded-xl border border-white/5 hover:border-primary/20 transition-all">
+                                    <h3 className="text-white font-semibold text-lg mb-1">{fee.category}</h3>
+                                    <p className="text-sm text-gray-400 mb-4 flex items-center gap-2">
+                                        <User className="w-3 h-3" />
+                                        {fee.type}
+                                    </p>
+
+                                    <div className="grid grid-cols-2 gap-4 pt-4 border-t border-white/5">
+                                        <div className="bg-primary/10 rounded-lg p-3 text-center">
+                                            <span className="block text-primary text-xs uppercase font-bold tracking-wider mb-1">Early Bird</span>
+                                            <span className="text-white font-bold">{fee.early}</span>
+                                        </div>
+                                        <div className="bg-white/5 rounded-lg p-3 text-center">
+                                            <span className="block text-gray-400 text-xs uppercase font-bold tracking-wider mb-1">Late</span>
+                                            <span className="text-gray-200 font-bold">{fee.late}</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+
+                        {/* Desktop Table View */}
+                        <div className="hidden md:block overflow-x-auto">
                             <table className="w-full text-left text-sm text-gray-400">
                                 <thead className="text-xs uppercase bg-black/20 text-gray-200">
                                     <tr>
