@@ -14,10 +14,17 @@ const Hero = () => {
     return (
         <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
             {/* Background Effects */}
-            <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary/20 via-background to-background z-0"></div>
-            <div className="absolute top-0 left-0 w-full h-full bg-[url('/grid.svg')] opacity-10 z-0"></div>
+            {/* Background Effects */}
+            <div className="absolute inset-0 z-0">
+                <div
+                    className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+                    style={{ backgroundImage: "url('/assets/images/college/pec_chowk.png')" }}
+                ></div>
+                <div className="absolute inset-0 bg-black/5 bg-gradient-to-b from-background/90 via-background/80 to-background/90"></div>
+            </div>
+            <div className="absolute top-0 left-0 w-full h-full bg-[url('/grid.svg')] opacity-70 z-0"></div>
 
-            <div className="relative z-10 max-w-screen-xl mx-auto px-4 py-24 text-center lg:py-56">
+            <div className="relative z-10 max-w-screen-xl mx-auto px-4 py-24 text-center lg:py-5">
 
                 <div className={`transition-all duration-1000 transform ${mounted ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
                     <span className="inline-flex items-center justify-center px-4 py-1.5 mb-8 text-sm font-medium border border-primary/30 rounded-full bg-primary/10 text-primary-foreground backdrop-blur-sm">
@@ -33,7 +40,7 @@ const Hero = () => {
                         </span>
                     </h1>
 
-                    <p className="mb-8 text-lg font-normal text-gray-400 lg:text-xl sm:px-16 lg:px-48 max-w-4xl mx-auto">
+                    <p className="mb-24 text-lg font-normal text-gray-400 lg:text-xl sm:px-16 lg:px-48 max-w-4xl mx-auto">
                         Join leading experts, researchers, and innovators at the premier IEEE conference on Industrial Information Systems. Explore the convergence of AI, IoT, and sustainable technologies.
                     </p>
 
