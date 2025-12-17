@@ -2,8 +2,18 @@
 
 import { Calendar, CheckCircle2, Clock, AlertCircle } from "lucide-react";
 
-const Timeline = () => {
-    const events = [
+interface TimelineProps {
+    events?: {
+        title: string;
+        date: string;
+        description: string;
+        status: string;
+        icon: any;
+    }[];
+}
+
+const Timeline = ({ events }: TimelineProps) => {
+    const defaultEvents = [
         {
             title: "Call for Papers Opens",
             date: "January 15, 2025",
@@ -41,6 +51,8 @@ const Timeline = () => {
         },
     ];
 
+    const displayEvents = events || defaultEvents;
+
     return (
         <section className="py-24 relative overflow-hidden">
             {/* Background Elements */}
@@ -61,7 +73,7 @@ const Timeline = () => {
                     <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary/50 via-accent/50 to-primary/50 md:-translate-x-1/2"></div>
 
                     <div className="space-y-12">
-                        {events.map((event, index) => {
+                        {displayEvents.map((event, index) => {
                             const Icon = event.icon;
                             const isEven = index % 2 === 0;
 
@@ -86,8 +98,8 @@ const Timeline = () => {
                                             <div className="relative z-10">
                                                 <div className="flex items-center gap-3 mb-2">
                                                     <span className={`p-2 rounded-lg ${event.status === 'completed' ? 'bg-green-500/20 text-green-400' :
-                                                            event.status === 'active' ? 'bg-accent/20 text-accent' :
-                                                                'bg-gray-700/50 text-gray-400'
+                                                        event.status === 'active' ? 'bg-accent/20 text-accent' :
+                                                            'bg-gray-700/50 text-gray-400'
                                                         }`}>
                                                         <Icon className="w-4 h-4" />
                                                     </span>

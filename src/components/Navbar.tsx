@@ -13,6 +13,7 @@ const Navbar = () => {
         { name: "Committee", href: "/committee" },
         { name: "Speakers", href: "/speakers" },
         { name: "Tracks", href: "/tracks" },
+        { name: "Dates", href: "/important-dates" },
         { name: "Sessions", href: "/sessions" },
         { name: "Registration", href: "/registration" },
         { name: "Sponsorship", href: "/sponsorship" },
