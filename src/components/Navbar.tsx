@@ -16,6 +16,7 @@ const Navbar = () => {
         { name: "Sessions", href: "/sessions" },
         { name: "Registration", href: "/registration" },
         { name: "Sponsorship", href: "/sponsorship" },
+        { name: "Venue", href: "/venue" },
         { name: "Authors", href: "/authors" },
     ];
 
