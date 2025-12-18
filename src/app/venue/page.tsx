@@ -60,7 +60,7 @@ const VenuePage = () => {
                         Conference <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">Venue</span>
                     </h1>
                     <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
-                        Discover the beautiful city of Chandigarh and the premium venue for INDISCON 2025.
+                        Discover the beautiful city of Chandigarh and the premium venue for CHANDICON 2026.
                     </p>
                 </div>
             </section>
@@ -233,7 +233,7 @@ const VenuePage = () => {
             </div>
 
             <footer className="py-8 text-center text-gray-500 text-sm border-t border-white/10 mt-auto">
-                <p>&copy; 2025 IEEE INDISCON. All rights reserved.</p>
+                <p>&copy; 2026 IEEE CHANDICON. All rights reserved.</p>
             </footer>
         </main>
     );

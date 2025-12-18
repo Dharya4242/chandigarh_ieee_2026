@@ -18,7 +18,7 @@ const AwardsPage = () => {
                         Awards & <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">Grants</span>
                     </h1>
                     <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
-                        Recognizing excellence in research and supporting student participation at INDISCON 2025.
+                        Recognizing excellence in research and supporting student participation at CHANDICON 2026.
                     </p>
                 </div>
             </section>
@@ -36,7 +36,7 @@ const AwardsPage = () => {
                             </div>
                             <h2 className="text-3xl font-bold text-white mb-6">Travel Grants</h2>
                             <p className="text-gray-300 leading-relaxed mb-8">
-                                INDISCON 2025 is pleased to offer financial support to selected IEEE student first authors for presenting their research work.
+                                CHANDICON 2026 is pleased to offer financial support to selected IEEE student first authors for presenting their research work.
                                 The grant is awarded on a highly competitive basis.
                             </p>
                             <div className="space-y-4">
@@ -56,7 +56,7 @@ const AwardsPage = () => {
                         <div>
                             <h3 className="text-2xl font-bold text-white mb-4">How to Apply</h3>
                             <p className="text-gray-400 mb-6">
-                                Interested student authors should email their application to <a href="mailto:ieeeindiscon2024@gmail.com" className="text-primary hover:text-white transition-colors">ieeeindiscon2024@gmail.com</a> with the following details:
+                                Interested student authors should email their application to <a href="mailto:ieeeCHANDICON2024@gmail.com" className="text-primary hover:text-white transition-colors">ieeeCHANDICON2024@gmail.com</a> with the following details:
                             </p>
                         </div>
 
@@ -137,7 +137,7 @@ const AwardsPage = () => {
             </div>
 
             <footer className="py-8 text-center text-gray-500 text-sm border-t border-white/10 mt-auto">
-                <p>&copy; 2025 IEEE INDISCON. All rights reserved.</p>
+                <p>&copy; 2026 IEEE CHANDICON. All rights reserved.</p>
             </footer>
         </main>
     );

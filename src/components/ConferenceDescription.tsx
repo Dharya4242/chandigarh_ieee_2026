@@ -12,13 +12,13 @@ const ConferenceDescription = () => {
 
                     <div className="relative z-10">
                         <h2 className="text-3xl md:text-4xl font-bold mb-8 text-white text-center">
-                            About <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">INDISCON 2025</span>
+                            About <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">CHANDICON 2026</span>
                         </h2>
 
                         <p className="text-lg text-gray-300 leading-relaxed text-center font-light">
-                            <span className="font-semibold text-white">INDISCON</span> is a flagship annual international conference of the IEEE India Council organized by an IEEE Subsection in INDIA.
+                            <span className="font-semibold text-white">CHANDICON</span> is a flagship annual international conference of the IEEE India Council organized by an IEEE Subsection in INDIA.
                             <br /><br />
-                            <span className="text-accent font-semibold">INDISCON 2025</span>, scheduled during <span className="text-white">August 20-22, 2025</span>, is being organized by
+                            <span className="text-accent font-semibold">CHANDICON 2026</span>, scheduled during <span className="text-white">August 20-22, 2026</span>, is being organized by
                             IEEE Chandigarh Subsection along with IEEE India Council. The conference will be hosted by
                             <span className="text-white font-semibold"> Punjab Engineering College (Deemed to be University), Chandigarh</span>.
                             <br /><br />

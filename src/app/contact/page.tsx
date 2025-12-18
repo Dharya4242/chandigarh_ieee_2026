@@ -18,7 +18,7 @@ const ContactPage = () => {
                         Contact <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">Us</span>
                     </h1>
                     <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
-                        Have questions? We're here to help. Reach out to the INDISCON 2025 organizing committee.
+                        Have questions? We're here to help. Reach out to the CHANDICON 2026 organizing committee.
                     </p>
                 </div>
             </section>
@@ -54,8 +54,8 @@ const ContactPage = () => {
                                     <div>
                                         <h3 className="text-lg font-semibold text-white mb-2">Email Us</h3>
                                         <p className="text-gray-400 mb-1">For general inquiries and submissions:</p>
-                                        <a href="mailto:ieeeindiscon2024@gmail.com" className="text-primary hover:text-white transition-colors font-medium">
-                                            ieeeindiscon2024@gmail.com
+                                        <a href="mailto:ieeeCHANDICON2024@gmail.com" className="text-primary hover:text-white transition-colors font-medium">
+                                            ieeeCHANDICON2024@gmail.com
                                         </a>
                                     </div>
                                 </div>
@@ -78,7 +78,7 @@ const ContactPage = () => {
                         <div className="bg-gradient-to-br from-primary/20 to-accent/20 border border-white/10 rounded-3xl p-8 text-center">
                             <h3 className="text-xl font-bold text-white mb-4">Ready to Register?</h3>
                             <p className="text-gray-300 mb-6">
-                                Don't miss the opportunity to be part of INDISCON 2025. Secure your spot today.
+                                Don't miss the opportunity to be part of CHANDICON 2026. Secure your spot today.
                             </p>
                             <a
                                 href="/registration"
@@ -111,7 +111,7 @@ const ContactPage = () => {
             </div>
 
             <footer className="py-8 text-center text-gray-500 text-sm border-t border-white/10 mt-auto">
-                <p>&copy; 2025 IEEE INDISCON. All rights reserved.</p>
+                <p>&copy; 2026 IEEE CHANDICON. All rights reserved.</p>
             </footer>
         </main>
     );

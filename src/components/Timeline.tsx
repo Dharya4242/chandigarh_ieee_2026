@@ -16,36 +16,36 @@ const Timeline = ({ events }: TimelineProps) => {
     const defaultEvents = [
         {
             title: "Call for Papers Opens",
-            date: "January 15, 2025",
+            date: "January 15, 2026",
             description: "Submission of regular papers opens for all tracks.",
             status: "completed", // upcoming, active, completed
             icon: CheckCircle2,
         },
         {
             title: "Paper Submission Deadline",
-            date: "April 15, 2025",
+            date: "April 15, 2026",
             description: "Last date to submit your full papers for review.",
             status: "active",
             icon: Clock,
         },
         {
             title: "Notification of Acceptance",
-            date: "June 15, 2025",
+            date: "June 15, 2026",
             description: "Authors will be notified about the acceptance of their papers.",
             status: "upcoming",
             icon: AlertCircle,
         },
         {
             title: "Camera Ready Submission",
-            date: "July 15, 2025",
+            date: "July 15, 2026",
             description: "Final version of the accepted papers due.",
             status: "upcoming",
             icon: Calendar,
         },
         {
             title: "Conference Dates",
-            date: "August 20-22, 2025",
-            description: "INDISCON 2025 at Chandigarh, India.",
+            date: "August 20-22, 2026",
+            description: "CHANDICON 2026 at Chandigarh, India.",
             status: "upcoming",
             icon: Calendar,
         },
@@ -64,7 +64,7 @@ const Timeline = ({ events }: TimelineProps) => {
                         Important <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">Dates</span>
                     </h2>
                     <p className="text-gray-400 max-w-2xl mx-auto">
-                        Mark your calendar for these key deadlines and events for INDISCON 2025.
+                        Mark your calendar for these key deadlines and events for CHANDICON 2026.
                     </p>
                 </div>
 

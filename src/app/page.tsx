@@ -34,7 +34,7 @@ export default function Home() {
       </section>
 
       <footer className="py-8 text-center text-gray-500 text-sm border-t border-white/10 mt-auto">
-        <p>&copy; 2025 IEEE INDISCON. All rights reserved.</p>
+        <p>&copy; 2026 IEEE CHANDICON. All rights reserved.</p>
       </footer>
     </main>
   );

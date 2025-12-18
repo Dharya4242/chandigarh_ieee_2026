@@ -23,7 +23,7 @@ const SpeakersPage = () => {
                         Keynote <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">Speakers</span>
                     </h1>
                     <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
-                        Meet the thought leaders and visionaries sharing their insights at INDISCON 2025.
+                        Meet the thought leaders and visionaries sharing their insights at CHANDICON 2026.
                     </p>
                 </div>
             </section>
@@ -89,7 +89,7 @@ const SpeakersPage = () => {
             </section>
 
             <footer className="py-8 text-center text-gray-500 text-sm border-t border-white/10 mt-auto">
-                <p>&copy; 2025 IEEE INDISCON. All rights reserved.</p>
+                <p>&copy; 2026 IEEE CHANDICON. All rights reserved.</p>
             </footer>
         </main>
     );

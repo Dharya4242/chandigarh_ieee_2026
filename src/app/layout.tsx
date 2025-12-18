@@ -13,7 +13,7 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "INDISCON 2025 | IEEE Conference",
+  title: "CHANDICON 2026 | IEEE Conference",
   description: "The Premier Conference for Industrial Information Systems",
 };
 

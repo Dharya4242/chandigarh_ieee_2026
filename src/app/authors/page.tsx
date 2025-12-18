@@ -18,7 +18,7 @@ const AuthorsPage = () => {
                         For <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">Authors</span>
                     </h1>
                     <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
-                        Guidelines for paper submission, formatting, and final camera-ready requirements for INDISCON 2025.
+                        Guidelines for paper submission, formatting, and final camera-ready requirements for CHANDICON 2026.
                     </p>
                 </div>
             </section>
@@ -46,7 +46,7 @@ const AuthorsPage = () => {
                                 <ExternalLink className="w-4 h-4 ml-2" />
                             </a>
                             <a
-                                href="https://cmt3.research.microsoft.com/INDISCON2024/"
+                                href="https://cmt3.research.microsoft.com/CHANDICON2024/"
                                 target="_blank"
                                 className="inline-flex items-center justify-center px-6 py-3 text-sm font-medium text-white bg-primary hover:bg-primary/90 rounded-full transition-all shadow-lg shadow-primary/25"
                             >
@@ -62,7 +62,7 @@ const AuthorsPage = () => {
                             Plagiarism Policy
                         </h2>
                         <p className="text-gray-300 mb-6 leading-relaxed">
-                            INDISCON 2025 strictly follows IEEE policies on plagiarism and AI-generated text. Papers found violating these policies will be rejected.
+                            CHANDICON 2026 strictly follows IEEE policies on plagiarism and AI-generated text. Papers found violating these policies will be rejected.
                         </p>
                         <a
                             href="https://conferences.ieeeauthorcenter.ieee.org/author-ethics/guidelines-and-policies/submission-policies/"
@@ -153,7 +153,7 @@ const AuthorsPage = () => {
             </div>
 
             <footer className="py-8 text-center text-gray-500 text-sm border-t border-white/10 mt-auto">
-                <p>&copy; 2025 IEEE INDISCON. All rights reserved.</p>
+                <p>&copy; 2026 IEEE CHANDICON. All rights reserved.</p>
             </footer>
         </main>
     );

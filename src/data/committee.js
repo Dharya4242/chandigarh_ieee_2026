@@ -276,27 +276,34 @@ export const COMMITTEE = {
     //     },
     // ],
     "TPC Chairs": [
+
+        {
+            name: "Prof Bhim Singh",
+            designation: "IIT Delhi, India",
+            image_url: "/assets/committee/Bhim Singh.jpg",
+            link: "https://ee.iitd.ac.in/faculty-profile/4",
+        },
         {
             name: "Prof. Sudeb Das Gupta",
             designation: "Indian Institute of Technology, Roorkee",
             image_url: "/assets/committee/prof-sudeb-dasgupta.jpg",
             link: "http://ece.iitr.ac.in/sudeb_dasgupta",
         },
-        {
-            name: "Prof. Narendra S. Chaudhari",
-            designation: "Indian Institute of Technology, Indore",
-            image_url: "/assets/committee/prof-narendra-chaudhari.jpg",
-            link: "https://iiti.ac.in/people/~narendra/",
-        },
+        // {
+        //     name: "Prof. Narendra S. Chaudhari",
+        //     designation: "Indian Institute of Technology, Indore",
+        //     image_url: "/assets/committee/prof-narendra-chaudhari.jpg",
+        //     link: "https://iiti.ac.in/people/~narendra/",
+        // },
 
-        {
-            name: "Prof. G. Bhuvaneswari",
-            designation: "Mahindra University, Hyderabad",
-            image_url: "/assets/committee/prof-G-Bhuvaneswari.jpg",
-            link: "https://www.mahindrauniversity.edu.in/faculty/bhuvaneswari-gurumoorthy/",
-        },
+        // {
+        //     name: "Prof. G. Bhuvaneswari",
+        //     designation: "Mahindra University, Hyderabad",
+        //     image_url: "/assets/committee/prof-G-Bhuvaneswari.jpg",
+        //     link: "https://www.mahindrauniversity.edu.in/faculty/bhuvaneswari-gurumoorthy/",
+        // },
 
-        
+
         // {
         //     name: "Prof. S. V. Kulkarni",
         //     designation: "Indian Institute of Technology, Bombay",

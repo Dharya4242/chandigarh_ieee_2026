@@ -29,7 +29,7 @@ const Hero = () => {
                 <div className={`transition-all duration-1000 transform ${mounted ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
                     <span className="inline-flex items-center justify-center px-4 py-1.5 mb-8 text-sm font-medium border border-primary/30 rounded-full bg-primary/10 text-primary-foreground backdrop-blur-sm">
                         <span className="w-2 h-2 me-2 rounded-full bg-accent animate-pulse"></span>
-                        IEEE INDISCON 2025
+                        IEEE CHANDICON 2026
                     </span>
 
                     <h1 className="mb-6 text-5xl font-extrabold tracking-tight leading-none text-white md:text-6xl lg:text-8xl">
@@ -47,7 +47,7 @@ const Hero = () => {
                     <div className="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-6 mb-12">
                         <div className="flex items-center justify-center text-gray-300 gap-2 bg-secondary/30 px-6 py-3 rounded-xl border border-white/5 backdrop-blur-sm">
                             <Calendar className="w-5 h-5 text-accent" />
-                            <span>August 20-22, 2025</span>
+                            <span>August 20-22, 2026</span>
                         </div>
                         <div className="flex items-center justify-center text-gray-300 gap-2 bg-secondary/30 px-6 py-3 rounded-xl border border-white/5 backdrop-blur-sm">
                             <MapPin className="w-5 h-5 text-pink-500" />

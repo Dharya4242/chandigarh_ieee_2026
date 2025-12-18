@@ -18,7 +18,7 @@ const SessionsPage = () => {
                         Call for <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">Sessions & Tutorials</span>
                     </h1>
                     <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
-                        Submit proposals for Special Sessions and Tutorials to shape the scientific discourse at INDISCON 2025.
+                        Submit proposals for Special Sessions and Tutorials to shape the scientific discourse at CHANDICON 2026.
                     </p>
                 </div>
             </section>
@@ -36,7 +36,7 @@ const SessionsPage = () => {
 
                     <div className="prose prose-invert max-w-none text-gray-300 space-y-6">
                         <p className="text-lg leading-relaxed">
-                            INDISCON 2025 will provide an excellent forum for the dissemination of the latest research and ideas
+                            CHANDICON 2026 will provide an excellent forum for the dissemination of the latest research and ideas
                             in a wide range of Science, Engineering and Technology. The conference is keen to disseminate state-of-the-art
                             knowledge on specialist and latest topics related to the theme of the conference through dedicated Special Sessions.
                         </p>
@@ -100,15 +100,15 @@ const SessionsPage = () => {
                                         <Calendar className="w-6 h-6 text-accent" />
                                         <div>
                                             <p className="text-sm text-gray-400">Proposal Submission Deadline</p>
-                                            <p className="text-white font-semibold">April 15, 2025</p>
+                                            <p className="text-white font-semibold">April 15, 2026</p>
                                         </div>
                                     </div>
                                     <div className="flex items-center gap-4">
                                         <Mail className="w-6 h-6 text-accent" />
                                         <div>
                                             <p className="text-sm text-gray-400">Submit Proposal To</p>
-                                            <a href="mailto:ieeeindiscon2025@gmail.com" className="text-white font-semibold hover:text-primary transition-colors">
-                                                ieeeindiscon2025@gmail.com
+                                            <a href="mailto:ieeeCHANDICON2026@gmail.com" className="text-white font-semibold hover:text-primary transition-colors">
+                                                ieeeCHANDICON2026@gmail.com
                                             </a>
                                         </div>
                                     </div>
@@ -131,7 +131,7 @@ const SessionsPage = () => {
 
                     <div className="prose prose-invert max-w-none text-gray-300 space-y-6">
                         <p className="text-lg leading-relaxed">
-                            INDISCON 2025 solicits proposals for Tutorials/Workshops of 90 minutes (one session) that complement
+                            CHANDICON 2026 solicits proposals for Tutorials/Workshops of 90 minutes (one session) that complement
                             the regular program with clear and focused coverage of new and emerging topics within the scope of the conference.
                         </p>
 
@@ -173,10 +173,10 @@ const SessionsPage = () => {
                             <div className="flex items-center gap-8">
                                 <div className="text-right">
                                     <p className="text-xs text-gray-400 uppercase tracking-wider">Deadline</p>
-                                    <p className="text-white font-bold">April 15, 2025</p>
+                                    <p className="text-white font-bold">April 15, 2026</p>
                                 </div>
                                 <a
-                                    href="mailto:ieeeindiscon2025@gmail.com"
+                                    href="mailto:ieeeCHANDICON2026@gmail.com"
                                     className="inline-flex items-center justify-center px-6 py-2.5 text-sm font-medium text-white bg-primary hover:bg-primary/90 rounded-lg transition-colors shadow-lg shadow-primary/20"
                                 >
                                     Email Proposal
@@ -190,7 +190,7 @@ const SessionsPage = () => {
             </div>
 
             <footer className="py-8 text-center text-gray-500 text-sm border-t border-white/10 mt-auto">
-                <p>&copy; 2025 IEEE INDISCON. All rights reserved.</p>
+                <p>&copy; 2026 IEEE CHANDICON. All rights reserved.</p>
             </footer>
         </main>
     );

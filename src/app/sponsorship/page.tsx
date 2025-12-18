@@ -110,7 +110,7 @@ const SponsorshipPage = () => {
                         Become a <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">Sponsor</span>
                     </h1>
                     <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
-                        Connect with 700+ technology professionals, industry leaders, and researchers at INDISCON 2025.
+                        Connect with 700+ technology professionals, industry leaders, and researchers at CHANDICON 2026.
                     </p>
                 </div>
             </section>
@@ -120,7 +120,7 @@ const SponsorshipPage = () => {
                 {/* Intro Text */}
                 <section className="text-center max-w-4xl mx-auto">
                     <p className="text-gray-300 text-lg leading-relaxed">
-                        INDISCON 2025 offers a unique platform to showcase your services and solutions.
+                        CHANDICON 2026 offers a unique platform to showcase your services and solutions.
                         As one of the largest technology conferences in Asia Pacific, joining us as a sponsor puts your brand
                         front and center before top officials from the global tech industry.
                     </p>
@@ -159,7 +159,7 @@ const SponsorshipPage = () => {
                                     </ul>
 
                                     <a
-                                        href="mailto:ieeeindiscon2024@gmail.com"
+                                        href="mailto:ieeeCHANDICON2024@gmail.com"
                                         className={`w-full py-2.5 rounded-lg border ${tier.border} ${tier.color} text-center font-medium hover:bg-white/5 transition-colors mt-auto`}
                                     >
                                         Contact Us
@@ -218,11 +218,11 @@ const SponsorshipPage = () => {
                             Reach out to us today to secure your participation.
                         </p>
                         <a
-                            href="mailto:ieeeindiscon2024@gmail.com"
+                            href="mailto:ieeeCHANDICON2024@gmail.com"
                             className="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-white bg-white/10 backdrop-blur-md border border-white/20 hover:bg-white/20 rounded-full transition-all shadow-lg hover:scale-105"
                         >
                             <Mail className="w-5 h-5 mr-2" />
-                            ieeeindiscon2024@gmail.com
+                            ieeeCHANDICON2024@gmail.com
                         </a>
                     </div>
                 </section>
@@ -230,7 +230,7 @@ const SponsorshipPage = () => {
             </div>
 
             <footer className="py-8 text-center text-gray-500 text-sm border-t border-white/10 mt-auto">
-                <p>&copy; 2025 IEEE INDISCON. All rights reserved.</p>
+                <p>&copy; 2026 IEEE CHANDICON. All rights reserved.</p>
             </footer>
         </main>
     );

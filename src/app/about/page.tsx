@@ -4,28 +4,28 @@ import { ExternalLink, Calendar, MapPin, Award } from "lucide-react";
 const AboutPage = () => {
     const prevEditions = [
         {
-            name: "IEEE INDISCON 2023",
+            name: "IEEE CHANDICON 2023",
             venue: "GSSS Institute of Engineering & Technology for Women, Mysuru",
             dates: "August 5-7, 2023",
             theme: "Computational Intelligence and Learning Systems",
             link: "https://ieeexplore.ieee.org/xpl/conhome/10269798/proceeding",
         },
         {
-            name: "IEEE INDISCON 2022",
+            name: "IEEE CHANDICON 2022",
             venue: "KIIT Deemed to be University, Bhubaneswar",
             dates: "July 15-17, 2022",
             theme: "Impactful Innovations for Benefits of Society and Industry",
             link: "https://ieeexplore.ieee.org/xpl/conhome/9862528/proceeding",
         },
         {
-            name: "IEEE INDISCON 2021",
+            name: "IEEE CHANDICON 2021",
             venue: "Visvesvaraya National Institute of Technology, Nagpur",
             dates: "August 27-29, 2021",
             theme: "Impactful innovations for the benefit of industry and society",
             link: "https://ieeexplore.ieee.org/xpl/conhome/9581282/proceeding",
         },
         {
-            name: "IEEE INDISCON 2020",
+            name: "IEEE CHANDICON 2020",
             venue: "Gayatri Vidya Parishad College of Engineering, Visakhapatnam",
             dates: "October 3-4, 2020",
             theme: "Smart and Sustainable Systems - Decade Ahead",
@@ -43,7 +43,7 @@ const AboutPage = () => {
                 <div className="absolute top-0 right-0 w-96 h-96 bg-accent/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                     <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
-                        About <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">INDISCON</span>
+                        About <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">CHANDICON</span>
                     </h1>
                     <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
                         A flagship annual international conference of the IEEE India Council, bringing together global experts to shape the future of technology.
@@ -52,7 +52,7 @@ const AboutPage = () => {
             </section>
 
             {/* Previous Editions Section */}
-            <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+            {/* <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
                 <div className="flex items-center gap-4 mb-10">
                     <h2 className="text-3xl font-bold text-white">Previous Editions</h2>
                     <div className="h-px bg-white/10 flex-grow"></div>
@@ -89,7 +89,7 @@ const AboutPage = () => {
                         </a>
                     ))}
                 </div>
-            </section>
+            </section> */}
 
             {/* Organizations Section */}
             <section className="py-16 bg-black/20">
@@ -172,7 +172,7 @@ const AboutPage = () => {
             </section>
 
             <footer className="py-8 text-center text-gray-500 text-sm border-t border-white/10 mt-auto">
-                <p>&copy; 2025 IEEE INDISCON. All rights reserved.</p>
+                <p>&copy; 2026 IEEE CHANDICON. All rights reserved.</p>
             </footer>
         </main>
     );

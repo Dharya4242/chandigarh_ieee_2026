@@ -59,7 +59,7 @@ const TracksPage = () => {
                     <div className="relative z-10 text-center max-w-4xl mx-auto">
                         <p className="text-gray-300 leading-relaxed mb-8 text-lg">
                             The Conference aims to provide an active platform for research scientists, engineers, and practitioners throughout the world
-                            to present their latest research findings, ideas, and applications in the fields of interest which fall under the scope of INDISCON 2025.
+                            to present their latest research findings, ideas, and applications in the fields of interest which fall under the scope of CHANDICON 2026.
                             <br /><br />
                             Papers (upto 6 pages in .pdf) presented in the Conference, duly accepted after peer review, will be eligible for submission
                             for further consideration of publishing in the <span className="text-white font-semibold">IEEE Xplore</span>.
@@ -67,7 +67,7 @@ const TracksPage = () => {
 
                         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                             <a
-                                href="/CFP INDISCON 2024 Extended Deadline.pdf"
+                                href="/CFP CHANDICON 2024 Extended Deadline.pdf"
                                 target="_blank"
                                 className="inline-flex items-center justify-center px-8 py-3 text-base font-medium text-white bg-primary hover:bg-primary/90 rounded-full transition-all shadow-lg shadow-primary/25 hover:scale-105"
                             >
@@ -75,7 +75,7 @@ const TracksPage = () => {
                                 Download CFP
                             </a>
                             <a
-                                href="https://cmt3.research.microsoft.com/INDISCON2024/"
+                                href="https://cmt3.research.microsoft.com/CHANDICON2024/"
                                 target="_blank"
                                 className="inline-flex items-center justify-center px-8 py-3 text-base font-medium text-white border border-white/20 hover:bg-white/10 rounded-full transition-all hover:scale-105"
                             >
@@ -105,8 +105,8 @@ const TracksPage = () => {
                             <div
                                 key={index}
                                 className={`group border rounded-2xl transition-all duration-300 overflow-hidden ${isOpen
-                                        ? 'bg-secondary/30 border-primary/50 shadow-lg shadow-primary/10'
-                                        : 'bg-secondary/10 border-white/5 hover:border-white/10 hover:bg-secondary/20'
+                                    ? 'bg-secondary/30 border-primary/50 shadow-lg shadow-primary/10'
+                                    : 'bg-secondary/10 border-white/5 hover:border-white/10 hover:bg-secondary/20'
                                     }`}
                             >
                                 <button
@@ -151,7 +151,7 @@ const TracksPage = () => {
             </section>
 
             <footer className="py-8 text-center text-gray-500 text-sm border-t border-white/10 mt-auto">
-                <p>&copy; 2025 IEEE INDISCON. All rights reserved.</p>
+                <p>&copy; 2026 IEEE CHANDICON. All rights reserved.</p>
             </footer>
         </main>
     );
