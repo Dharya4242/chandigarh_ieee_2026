@@ -1,6 +1,7 @@
 "use client";
 
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 import { COMMITTEE } from "@/data/committee";
 import { ExternalLink, Linkedin, User } from "lucide-react";
 
@@ -37,10 +38,10 @@ const CommitteePage = () => {
                 <div className="absolute bottom-0 right-0 w-96 h-96 bg-accent/10 rounded-full blur-3xl translate-y-1/2 translate-x-1/2"></div>
 
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-                    <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
+                    <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
                         Organizing <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">Committee</span>
                     </h1>
-                    <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
+                    <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
                         The dedicated team of experts and visionaries behind CHANDICON 2026.
                     </p>
                 </div>
@@ -57,11 +58,11 @@ const CommitteePage = () => {
                     return (
                         <section key={index} className="scroll-mt-24" id={sectionTitle.toLowerCase().replace(/\s+/g, '-')}>
                             <div className="flex items-center gap-4 mb-10">
-                                <h2 className="text-3xl font-bold text-white relative">
+                                <h2 className="text-3xl font-bold text-gray-900 relative">
                                     {sectionTitle}
                                     <span className="absolute -bottom-2 left-0 w-1/3 h-1 bg-gradient-to-r from-primary to-accent rounded-full"></span>
                                 </h2>
-                                <div className="h-px bg-white/10 flex-grow mt-2"></div>
+                                <div className="h-px bg-gray-200 flex-grow mt-2"></div>
                             </div>
 
                             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
@@ -74,10 +75,10 @@ const CommitteePage = () => {
                                     return (
                                         <div
                                             key={mIndex}
-                                            className="group relative bg-secondary/20 border border-white/5 rounded-2xl overflow-hidden hover:bg-secondary/30 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-primary/10 flex flex-col"
+                                            className="group relative bg-white border border-gray-200 rounded-2xl overflow-hidden hover:bg-gray-50 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-primary/10 flex flex-col"
                                         >
                                             {/* Image Container */}
-                                            <div className="aspect-[1/1] overflow-hidden relative bg-black/50">
+                                            <div className="aspect-[1/1] overflow-hidden relative bg-gray-100">
                                                 {hasImage ? (
                                                     <img
                                                         src={imageSrc}
@@ -86,13 +87,13 @@ const CommitteePage = () => {
                                                         loading="lazy"
                                                     />
                                                 ) : (
-                                                    <div className="w-full h-full flex items-center justify-center bg-secondary/50">
-                                                        <User className="w-20 h-20 text-gray-600" />
+                                                    <div className="w-full h-full flex items-center justify-center bg-gray-200">
+                                                        <User className="w-20 h-20 text-gray-400" />
                                                     </div>
                                                 )}
 
                                                 {/* Overlay with potential social links */}
-                                                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
+                                                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
                                                     {member.link && (
                                                         <a
                                                             href={member.link}
@@ -108,10 +109,10 @@ const CommitteePage = () => {
 
                                             {/* Content */}
                                             <div className="p-5 flex-grow flex flex-col text-center">
-                                                <h3 className="text-lg font-bold text-white mb-1 group-hover:text-primary transition-colors">
+                                                <h3 className="text-lg font-bold text-gray-900 mb-1 group-hover:text-primary transition-colors">
                                                     {member.name}
                                                 </h3>
-                                                <p className="text-sm text-gray-400 font-light mb-2">
+                                                <p className="text-sm text-gray-600 font-light mb-2">
                                                     {member.designation}
                                                 </p>
                                                 {member.track && (
@@ -129,9 +130,7 @@ const CommitteePage = () => {
                 })}
             </div>
 
-            <footer className="py-8 text-center text-gray-500 text-sm border-t border-white/10 mt-auto">
-                <p>&copy; 2026 IEEE CHANDICON. All rights reserved.</p>
-            </footer>
+            <Footer />
         </main>
     );
 };

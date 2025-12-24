@@ -1,6 +1,7 @@
 "use client";
 
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 import { SPEAKERS } from "@/data/speakers";
 import { ExternalLink, Mic2 } from "lucide-react";
 
@@ -19,10 +20,10 @@ const SpeakersPage = () => {
                 <div className="absolute bottom-0 left-0 w-96 h-96 bg-primary/10 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2"></div>
 
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-                    <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
+                    <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
                         Keynote <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">Speakers</span>
                     </h1>
-                    <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
+                    <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
                         Meet the thought leaders and visionaries sharing their insights at CHANDICON 2026.
                     </p>
                 </div>
@@ -37,10 +38,10 @@ const SpeakersPage = () => {
                         return (
                             <div
                                 key={index}
-                                className="group relative bg-secondary/20 border border-white/5 rounded-2xl overflow-hidden hover:bg-secondary/30 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-primary/10 flex flex-col"
+                                className="group relative bg-white border border-gray-200 rounded-2xl overflow-hidden hover:bg-gray-50 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-primary/10 flex flex-col"
                             >
                                 {/* Image Container */}
-                                <div className="aspect-[4/5] overflow-hidden relative bg-black/50">
+                                <div className="aspect-[4/5] overflow-hidden relative bg-gray-100">
                                     {speaker.image ? (
                                         <img
                                             src={imageSrc}
@@ -49,13 +50,13 @@ const SpeakersPage = () => {
                                             loading="lazy"
                                         />
                                     ) : (
-                                        <div className="w-full h-full flex items-center justify-center bg-secondary/50">
-                                            <Mic2 className="w-20 h-20 text-gray-600" />
+                                        <div className="w-full h-full flex items-center justify-center bg-gray-200">
+                                            <Mic2 className="w-20 h-20 text-gray-400" />
                                         </div>
                                     )}
 
                                     {/* Overlay */}
-                                    <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-300"></div>
+                                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-60 transition-opacity duration-300"></div>
 
                                     {/* Floating Social Link (if needed/available) */}
                                     {speaker.link && (
@@ -64,7 +65,7 @@ const SpeakersPage = () => {
                                                 href={speaker.link}
                                                 target="_blank"
                                                 rel="noopener noreferrer"
-                                                className="p-2 bg-white/10 backdrop-blur-md rounded-full text-white hover:bg-primary hover:text-white transition-colors flex items-center justify-center"
+                                                className="p-2 bg-white/90 backdrop-blur-md rounded-full text-primary hover:bg-primary hover:text-white transition-colors flex items-center justify-center"
                                                 title="View Profile"
                                             >
                                                 <ExternalLink className="w-5 h-5" />
@@ -74,11 +75,11 @@ const SpeakersPage = () => {
                                 </div>
 
                                 {/* Content */}
-                                <div className="p-6 flex-grow flex flex-col text-center relative mt-auto -mt-20 z-10">
-                                    <h3 className="text-xl font-bold text-white mb-2 group-hover:text-primary transition-colors drop-shadow-md">
+                                <div className="p-6 flex-grow flex flex-col text-center relative z-10">
+                                    <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">
                                         {speaker.name}
                                     </h3>
-                                    <p className="text-sm text-gray-300 font-medium leading-relaxed drop-shadow-sm">
+                                    <p className="text-sm text-gray-600 font-medium leading-relaxed">
                                         {speaker.designation}
                                     </p>
                                 </div>
@@ -88,9 +89,7 @@ const SpeakersPage = () => {
                 </div>
             </section>
 
-            <footer className="py-8 text-center text-gray-500 text-sm border-t border-white/10 mt-auto">
-                <p>&copy; 2026 IEEE CHANDICON. All rights reserved.</p>
-            </footer>
+            <Footer />
         </main>
     );
 };

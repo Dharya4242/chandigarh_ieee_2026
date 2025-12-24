@@ -60,10 +60,10 @@ const Timeline = ({ events }: TimelineProps) => {
 
             <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-16">
-                    <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+                    <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
                         Important <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">Dates</span>
                     </h2>
-                    <p className="text-gray-400 max-w-2xl mx-auto">
+                    <p className="text-gray-600 max-w-2xl mx-auto">
                         Mark your calendar for these key deadlines and events for CHANDICON 2026.
                     </p>
                 </div>
@@ -89,17 +89,17 @@ const Timeline = ({ events }: TimelineProps) => {
                                     {/* Content Card */}
                                     <div className="ml-12 md:ml-0 md:px-8 w-full md:w-1/2">
                                         <div className={`
-                      group relative p-6 rounded-2xl border border-white/10 bg-secondary/20 backdrop-blur-sm 
-                      hover:bg-secondary/30 transition-all duration-300 hover:-translate-y-1 hover:border-primary/30
+                      group relative p-6 rounded-2xl border border-gray-200 bg-white shadow-sm
+                      hover:shadow-md transition-all duration-300 hover:-translate-y-1 hover:border-primary/30
                       ${isEven ? 'md:mr-auto' : 'md:ml-auto'}
                     `}>
                                             <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity rounded-2xl"></div>
 
                                             <div className="relative z-10">
                                                 <div className="flex items-center gap-3 mb-2">
-                                                    <span className={`p-2 rounded-lg ${event.status === 'completed' ? 'bg-green-500/20 text-green-400' :
-                                                        event.status === 'active' ? 'bg-accent/20 text-accent' :
-                                                            'bg-gray-700/50 text-gray-400'
+                                                    <span className={`p-2 rounded-lg ${event.status === 'completed' ? 'bg-green-100 text-green-600' :
+                                                        event.status === 'active' ? 'bg-accent/10 text-accent' :
+                                                            'bg-gray-100 text-gray-500'
                                                         }`}>
                                                         <Icon className="w-4 h-4" />
                                                     </span>
@@ -108,10 +108,10 @@ const Timeline = ({ events }: TimelineProps) => {
                                                     </span>
                                                 </div>
 
-                                                <h3 className="text-xl font-bold text-white mb-2 group-hover:text-primary transition-colors">
+                                                <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">
                                                     {event.title}
                                                 </h3>
-                                                <p className="text-gray-400 text-sm leading-relaxed">
+                                                <p className="text-gray-600 text-sm leading-relaxed">
                                                     {event.description}
                                                 </p>
                                             </div>

@@ -1,6 +1,7 @@
 "use client";
 
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 import { Check, AlertCircle, CreditCard, Receipt, User, Users } from "lucide-react";
 
 // Fee Data
@@ -43,10 +44,10 @@ const RegistrationPage = () => {
                 <div className="absolute top-0 right-0 w-96 h-96 bg-accent/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
 
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-                    <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
+                    <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
                         Registration <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">Details</span>
                     </h1>
-                    <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
+                    <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
                         Secure your spot at CHANDICON 2026. Early bird registration offers significant savings.
                     </p>
                 </div>
@@ -56,13 +57,13 @@ const RegistrationPage = () => {
 
                 {/* Registration Fees Table */}
                 <section>
-                    <div className="bg-secondary/20 border border-white/5 rounded-3xl overflow-hidden backdrop-blur-sm">
-                        <div className="p-6 border-b border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
-                            <h2 className="text-2xl font-bold text-white flex items-center gap-3">
+                    <div className="bg-white border border-gray-200 rounded-3xl overflow-hidden shadow-sm">
+                        <div className="p-6 border-b border-gray-200 flex flex-col md:flex-row justify-between items-center gap-4 bg-gray-50">
+                            <h2 className="text-2xl font-bold text-gray-900 flex items-center gap-3">
                                 <CreditCard className="w-6 h-6 text-accent" />
                                 Registration Fees
                             </h2>
-                            <span className="text-sm text-gray-400 bg-white/5 px-4 py-1.5 rounded-full">
+                            <span className="text-sm text-gray-500 bg-gray-200 px-4 py-1.5 rounded-full">
                                 * Exclusive of GST and other taxes
                             </span>
                         </div>
@@ -93,8 +94,8 @@ const RegistrationPage = () => {
 
                         {/* Desktop Table View */}
                         <div className="hidden md:block overflow-x-auto">
-                            <table className="w-full text-left text-sm text-gray-400">
-                                <thead className="text-xs uppercase bg-black/20 text-gray-200">
+                            <table className="w-full text-left text-sm text-gray-600">
+                                <thead className="text-xs uppercase bg-gray-100 text-gray-700">
                                     <tr>
                                         <th scope="col" className="px-6 py-4">Participant Type</th>
                                         <th scope="col" className="px-6 py-4">Category</th>
@@ -102,12 +103,12 @@ const RegistrationPage = () => {
                                         <th scope="col" className="px-6 py-4 text-center">Late Registration</th>
                                     </tr>
                                 </thead>
-                                <tbody className="divide-y divide-white/5">
+                                <tbody className="divide-y divide-gray-200">
                                     {detailedFees.map((fee, index) => (
-                                        <tr key={index} className="hover:bg-white/5 transition-colors">
-                                            <td className="px-6 py-4 font-medium text-white">{fee.type}</td>
+                                        <tr key={index} className="hover:bg-gray-50 transition-colors">
+                                            <td className="px-6 py-4 font-medium text-gray-900">{fee.type}</td>
                                             <td className="px-6 py-4">{fee.category}</td>
-                                            <td className="px-6 py-4 text-center font-bold text-white bg-primary/5">{fee.early}</td>
+                                            <td className="px-6 py-4 text-center font-bold text-primary bg-primary/5">{fee.early}</td>
                                             <td className="px-6 py-4 text-center">{fee.late}</td>
                                         </tr>
                                     ))}
@@ -117,8 +118,8 @@ const RegistrationPage = () => {
 
                         <div className="p-6 bg-primary/5 border-t border-primary/10 flex flex-col sm:flex-row items-center justify-between gap-6">
                             <div>
-                                <p className="text-white font-semibold">Ready to register?</p>
-                                <p className="text-sm text-gray-400">Proceed to the payment gateway to complete your registration.</p>
+                                <p className="text-gray-900 font-semibold">Ready to register?</p>
+                                <p className="text-sm text-gray-600">Proceed to the payment gateway to complete your registration.</p>
                             </div>
                             <a
                                 href="https://web.ticketdude.app/e/72"
@@ -135,14 +136,14 @@ const RegistrationPage = () => {
                 <div className="grid md:grid-cols-2 gap-8">
 
                     {/* For Authors */}
-                    <section className="bg-secondary/10 border border-white/5 rounded-2xl p-8">
+                    <section className="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm">
                         <div className="flex items-center gap-3 mb-6">
-                            <div className="p-2 bg-blue-500/20 rounded-lg text-blue-400">
+                            <div className="p-2 bg-blue-500/10 rounded-lg text-blue-600">
                                 <User className="w-6 h-6" />
                             </div>
-                            <h3 className="text-xl font-bold text-white">For Authors</h3>
+                            <h3 className="text-xl font-bold text-gray-900">For Authors</h3>
                         </div>
-                        <ul className="space-y-4 text-gray-300 text-sm leading-relaxed">
+                        <ul className="space-y-4 text-gray-600 text-sm leading-relaxed">
                             <li className="flex gap-3">
                                 <Check className="w-5 h-5 text-blue-400 flex-shrink-0 mt-0.5" />
                                 <span>At least one author of every accepted paper must register and present the paper for inclusion in IEEE Xplore.</span>
@@ -163,14 +164,14 @@ const RegistrationPage = () => {
                     </section>
 
                     {/* For Attendees */}
-                    <section className="bg-secondary/10 border border-white/5 rounded-2xl p-8">
+                    <section className="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm">
                         <div className="flex items-center gap-3 mb-6">
-                            <div className="p-2 bg-green-500/20 rounded-lg text-green-400">
+                            <div className="p-2 bg-green-500/10 rounded-lg text-green-600">
                                 <Users className="w-6 h-6" />
                             </div>
-                            <h3 className="text-xl font-bold text-white">For Attendees</h3>
+                            <h3 className="text-xl font-bold text-gray-900">For Attendees</h3>
                         </div>
-                        <ul className="space-y-4 text-gray-300 text-sm leading-relaxed">
+                        <ul className="space-y-4 text-gray-600 text-sm leading-relaxed">
                             <li className="flex gap-3">
                                 <Check className="w-5 h-5 text-green-400 flex-shrink-0 mt-0.5" />
                                 <span>Registration includes conference kit, access to all sessions, meals, and cultural events.</span>
@@ -188,9 +189,9 @@ const RegistrationPage = () => {
                 </div>
 
                 {/* Policies */}
-                <section className="bg-red-500/5 border border-red-500/10 rounded-2xl p-8 text-center max-w-4xl mx-auto">
-                    <h3 className="text-lg font-bold text-white mb-3">No Show Policy</h3>
-                    <p className="text-gray-400 text-sm">
+                <section className="bg-red-50 border border-red-100 rounded-2xl p-8 text-center max-w-4xl mx-auto">
+                    <h3 className="text-lg font-bold text-red-700 mb-3">No Show Policy</h3>
+                    <p className="text-red-600 text-sm">
                         Any accepted paper included in the final program is expected to have at least one author attend and present the paper at the conference.
                         Non-presented papers will not be submitted to IEEE Xplore digital library as per IEEE no-show policy.
                     </p>
@@ -198,9 +199,7 @@ const RegistrationPage = () => {
 
             </div>
 
-            <footer className="py-8 text-center text-gray-500 text-sm border-t border-white/10 mt-auto">
-                <p>&copy; 2026 IEEE CHANDICON. All rights reserved.</p>
-            </footer>
+            <Footer />
         </main>
     );
 };
